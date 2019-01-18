@@ -35,12 +35,12 @@ const kennan = {
   "name": "Kennan" ,
   "email": "kdiben1@tinypic.com" ,
   "gender": "M" ,
-  "speak": function () {
+  "speak": function speak() {
     console.log("Hello! My name is Kennan");
   }
 }
 
-console.log(kennan.speak);
+console.log(kennan.speak());
 
 const keven = {
   "id": 3 ,
@@ -60,10 +60,14 @@ const antonietta = {
   "id": 5 ,
   "name": "Antoinetta" ,
   "email": "adaine5@samsung.com" ,
-  "gender": "F"
+  "gender": "F",
+  "multiplyNumber": function multiplyNums(x,y) {
+    return x*y;
+  }
+
 }
 
-
+console.log(antonietta.multiplyNumber(3,4));
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
